@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
@@ -26,11 +27,6 @@
         border: 10px solid;
         border-color: lightpink; /* Viền 4 cạnh có màu khác nhau */
     }
-	
-	
-	
-	
-	
        
      .header-container {
             display: flex;
@@ -49,24 +45,95 @@
 			align-items: center;
             
         }
+		
+		
+		
+		
+		 .container {
+            display: flex;
+            align-items: centre ;
+            justify-content: flex-end; /* Đảm bảo hình ảnh nằm bên phải */
+        }
+        .container .text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-right: 15px; /* Tạo khoảng cách giữa chữ và hình ảnh */
+        }
+        .container img {
+            max-width: 800px;
+            height: 700px;
+        }
+		p {text-indent: 30px; /* Lùi đầu dòng 30px */
+            font-family: 'Patrick Hand', sans-serif; /* Sử dụng phông Patrick Hand */
+            font-size: 20px;               /* Kích thước chữ */
+            color: #00008B;               /* Màu chữ hồng dễ thương */}
+			
+	 body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1; /* Đẩy pano xuống cuối */
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            position: relative; /* Để bảng không bị che khuất */
+            z-index: 1; /* Đảm bảo bảng nằm trên pano */
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pano {
+            width: 100%;
+            background-color: #add8e6; /* Màu xanh dương nhạt */
+            color: #000;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed; /* Pano cố định ở cuối trang */
+            bottom: 0;
+            left: 0;
+            z-index: 1; /* Đảm bảo pano nằm dưới bảng */
+        }
+
+        .pano a {
+            color: #0033cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .pano a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
-
 <title> QUỐC TOẢN </title>
 <body>
 <div>
 
 <body>
-<div class="header-container">
-        <div class="header-title"><h1> NGUYỄN KHÁNH QUỐC TOẢN  </h1></div>
-        <video controls>
-            <source src="cliptoan.html.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ video.
-        </video>
-    </div>
+<h1> NGUYỄN KHÁNH QUỐC TOẢN  </h1></div>
+       
     <div class="container">
         <img src="https://s.net.vn/mXj7" alt="Example Image">
-        <p style ="font-size:20px"; font -family: "cursive"; p {text-inent: 10px;} > Xin chào các bạn, mình là Quốc Toản. Hiện tại mình học lớp 12 chuyên lý tại trường THPT Chuyên Bến Tre, mình cũng không biết vì sao hồi lớp 9 mình thích môn lý. Có thể vì sự tò mò của mình và sự thú vị từ các hiện tượng vật lý. Qua 2 năm học, mình cũng cảm thấy để chinh phục vật lý không chỉ mỗi sở thích mà còn là năng khiếu. Tuy không còn mặn mà với lý nữa nhưng mình cũng rất cố gắng để hoàn thành việc học chuyên lý trên lớp. Mình hy vọng trong tương lai mình sẽ được làm việc trong môi trường nghệ thuật và sáng tạo. Vì đó là lợi thế cho người thuộc cung sư tử và số chủ đạo 7 như mình. Họ thích sáng tạo, nghệ thuật và trải nghiệm. </p>
+        <p> Xin chào các bạn, mình là Quốc Toản. Hiện tại mình học lớp 12 chuyên lý tại trường THPT Chuyên Bến Tre, mình cũng không biết vì sao hồi lớp 9 mình thích môn lý. Có thể vì sự tò mò của mình và sự thú vị từ các hiện tượng vật lý. Qua 2 năm học, mình cũng cảm thấy để chinh phục vật lý không chỉ mỗi sở thích mà còn là năng khiếu. Tuy không còn mặn mà với lý nữa nhưng mình cũng rất cố gắng để hoàn thành việc học chuyên lý trên lớp. Mình hy vọng trong tương lai mình sẽ được làm việc trong môi trường nghệ thuật và sáng tạo. Vì đó là lợi thế cho người thuộc cung sư tử và số chủ đạo 7 như mình. Họ thích sáng tạo, nghệ thuật và trải nghiệm. </p>
     </div>
 </body>
 <style>
@@ -194,24 +261,29 @@
 <td> Sư tử </td>
 <td> Phúc Luân  </td>
             </tr>
-            <tr>
-                <td>Dữ liệu 4</td>
-                <td>Dữ liệu 5</td>
-                <td>Dữ liệu 6</td>
-            </tr>
+         
         </table>
 		<!-- Pano Cuối Trang -->
     <div class="pano">
         <p> Liên hệ facebook : <a href="https://s.net.vn/kOrN">Xem chi tiết</a></p>
-    </div>
-    </div>
-
-
-</html>
-
-</html>
 
 <hr>
-</body>
 
-</html>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
